@@ -1,0 +1,91 @@
+.gua {
+}
+
+.gua .yang,
+.gua .yin {
+  display: block;
+  cursor: pointer;
+}
+
+.gua-simple .gua .yang,
+.gua-simple .gua .yin,
+.gua-simple .gua .name,
+.gua-simple .gua .name2 {
+  cursor: auto;
+}
+
+a.gua-simple:hover {
+  text-decoration: none;
+}
+
+.gua .name,
+.gua .name2 {
+  cursor: pointer;
+}
+
+.gua .yang.inactive,
+.gua .yin.inactive {
+  opacity: 0.2;
+}
+.gua .yang {
+  background-color: #FF1100;
+}
+.gua .yin {
+  border-color: #000;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+
+
+/* ==================== Large */
+.gua.large .name {
+  margin-left: 60px;
+  font-size: 28pt;
+}
+.gua.large .name2 {
+  font-size: 28pt;
+  margin-left: 40px;
+}
+
+.gua.large .yang,
+.gua.large .yin {
+  margin-bottom: 15px;
+  height: 30px;
+  width: 160px;
+}
+.gua.large .yin {
+  border-left-width: 75px;
+  border-right-width: 75px;
+}
+
+/* ==================== Small */
+.gua.small .name {
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+.gua.small .name2 {
+  font-size: 18px;
+}
+
+.gua.small .yang,
+.gua.small .yin {
+  margin-bottom: 3px;
+  height: 5px;
+  width: 46px;
+}
+
+.gua.small .yin {
+  border-left-width: 21px;
+  border-right-width: 21px;
+}
+
+/* ==================== Explanation */
+
+.explanation {
+  margin-top: 55px;
+
+  section label {
+    font-size: 18pt;
+  }
+}

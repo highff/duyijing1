@@ -1,0 +1,226 @@
+@font-face {
+  font-family: MingLiu;
+  src: local("MingLiu") local("MingLiu-ExtraB");
+  /* src: url("MingLiu.ttf") format("truetype") */
+}
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  padding-top: 60px;
+}
+/* FIXME: why h2 style override body */
+body,
+h1,
+h2,
+h3,
+pre {
+  font-family: MingLiu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+/* ==================== Icon */
+.loading {
+  background: url('/images/yin-and-yang.svg') no-repeat left top transparent;
+  background-size: 30px 30px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-left: 50%;
+  margin-top: 30px;
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+.yin-yang.small {
+  background-position: left center;
+  background-size: 30px 30px;
+  padding-left: 35px;
+}
+.gua .yang,
+.gua .yin {
+  display: block;
+  cursor: pointer;
+}
+.gua-simple .gua .yang,
+.gua-simple .gua .yin,
+.gua-simple .gua .name,
+.gua-simple .gua .name2 {
+  cursor: auto;
+}
+a.gua-simple:hover {
+  text-decoration: none;
+}
+.gua .name,
+.gua .name2 {
+  cursor: pointer;
+}
+.gua .yang.inactive,
+.gua .yin.inactive {
+  opacity: 0.2;
+}
+.gua .yang {
+  background-color: #FF1100;
+}
+.gua .yin {
+  border-color: #000;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+/* ==================== Large */
+.gua.large .name {
+  margin-left: 60px;
+  font-size: 28pt;
+}
+.gua.large .name2 {
+  font-size: 28pt;
+  margin-left: 40px;
+}
+.gua.large .yang,
+.gua.large .yin {
+  margin-bottom: 15px;
+  height: 30px;
+  width: 160px;
+}
+.gua.large .yin {
+  border-left-width: 75px;
+  border-right-width: 75px;
+}
+/* ==================== Small */
+.gua.small .name {
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+.gua.small .name2 {
+  font-size: 18px;
+}
+.gua.small .yang,
+.gua.small .yin {
+  margin-bottom: 3px;
+  height: 5px;
+  width: 46px;
+}
+.gua.small .yin {
+  border-left-width: 21px;
+  border-right-width: 21px;
+}
+/* ==================== Explanation */
+.explanation {
+  margin-top: 55px;
+}
+.explanation section label {
+  font-size: 18pt;
+}
+.shiyi-doc li,
+p {
+  font-size: 16px;
+}
+.footer p,
+.footer span {
+  font-size: 11px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* ====================== home page 64-gua*/
+.six-four {
+  background-color: white;
+  margin: 30px auto;
+  width: 60%;
+  opacity: 0.8;
+}
+.six-four .gua-simple .gua.small {
+  width: 45px;
+  display: inline-block;
+}
+.six-four table tr {
+  border-right: 1px solid #ddd;
+}
+.six-four table tr:last-child {
+  border-bottom: 1px solid #ddd;
+}
+.six-four table tr td {
+  border-left: 1px solid #ddd;
+  width: 50px;
+  text-align: center;
+}
+/* ====================== Gua page */
+.gua-container .row {
+  border-top: 1px solid #DDD;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* ====================== 10-Yi Doc */
+.shiyi-doc .name {
+  font-size: 26px;
+}
+@media (max-width: 1023px) and (min-width: 641px) {
+  .explanation {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .six-four .gua-simple .gua .yin,
+  .six-four .gua-simple .gua .yang {
+    display: none;
+  }
+  .gua.small .name,
+  .gua.small .name2 {
+    font-size: 14px;
+  }
+  .six-four .gua-simple .gua.small {
+    width: 20px;
+  }
+  .gua.large .name {
+    margin-left: 22px;
+    font-size: 20pt;
+  }
+  .gua.large .name2 {
+    margin-left: 10px;
+    font-size: 20pt;
+  }
+  .gua.large .yang,
+  .gua.large .yin {
+    margin-bottom: 5px;
+    height: 8px;
+    width: 70px;
+  }
+  .gua.large .yin {
+    border-left-width: 34px;
+    border-right-width: 34px;
+  }
+  .explanation {
+    margin-top: 20px;
+  }
+}
